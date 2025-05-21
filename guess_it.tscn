@@ -1,0 +1,91 @@
+[gd_scene load_steps=6 format=3 uid="uid://c5x1n4hu5cwdt"]
+
+[ext_resource type="Script" uid="uid://jh44tbdo1o7g" path="res://guess_it.gd" id="1_0tepu"]
+[ext_resource type="PackedScene" uid="uid://bj0srunvignap" path="res://keyboard.tscn" id="1_yeimr"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_yeimr"]
+
+[sub_resource type="RibbonTrailMesh" id="RibbonTrailMesh_yeimr"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_0tepu"]
+
+[node name="Guess_it" type="Node2D"]
+script = ExtResource("1_0tepu")
+
+[node name="M_main_screen" type="MeshInstance2D" parent="."]
+position = Vector2(687, 740)
+scale = Vector2(1379.47, 1504.3)
+mesh = SubResource("QuadMesh_yeimr")
+
+[node name="M_scored" type="MeshInstance2D" parent="."]
+modulate = Color(0, 0.290559, 0.290761, 1)
+position = Vector2(1230, -258)
+scale = Vector2(629.816, 2927.41)
+mesh = SubResource("QuadMesh_yeimr")
+
+[node name="RT_concatenated_results" type="RichTextLabel" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 246.0
+offset_top = -100.0
+offset_right = 1446.0
+offset_bottom = 1200.0
+theme_override_font_sizes/normal_font_size = 185
+text = "12345      1
+12334      1
+00000      4
+88888      3
+11111      1
+12345      0"
+scroll_following = true
+vertical_alignment = 2
+
+[node name="M_lines" type="MeshInstance2D" parent="."]
+modulate = Color(0.61136, 0.61136, 0.61136, 1)
+position = Vector2(674, 1200)
+scale = Vector2(1373.19, 16.7953)
+mesh = SubResource("RibbonTrailMesh_yeimr")
+
+[node name="M_lines2" type="MeshInstance2D" parent="."]
+visible = false
+modulate = Color(0.61136, 0.61136, 0.61136, 1)
+position = Vector2(674, 944)
+scale = Vector2(1373.19, 16.7953)
+mesh = SubResource("RibbonTrailMesh_yeimr")
+
+[node name="M_lines3" type="MeshInstance2D" parent="."]
+visible = false
+modulate = Color(0.61136, 0.61136, 0.61136, 1)
+position = Vector2(674, 688)
+scale = Vector2(1373.19, 16.7953)
+mesh = SubResource("RibbonTrailMesh_yeimr")
+
+[node name="M_lines4" type="MeshInstance2D" parent="."]
+visible = false
+modulate = Color(0.61136, 0.61136, 0.61136, 1)
+position = Vector2(674, 432)
+scale = Vector2(1373.19, 16.7953)
+mesh = SubResource("RibbonTrailMesh_yeimr")
+
+[node name="M_lines5" type="MeshInstance2D" parent="."]
+visible = false
+modulate = Color(0.61136, 0.61136, 0.61136, 1)
+position = Vector2(674, 176)
+scale = Vector2(1373.19, 16.7953)
+mesh = SubResource("RibbonTrailMesh_yeimr")
+
+[node name="Keyboard" parent="." instance=ExtResource("1_yeimr")]
+
+[node name="L_guessed_number" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 435.0
+offset_top = 1195.0
+offset_right = 963.0
+offset_bottom = 1448.0
+theme_override_font_sizes/font_size = 185
+text = "88888"
+
+[node name="NotAllow" type="MeshInstance2D" parent="."]
+modulate = Color(0.527083, 0.527083, 0.527083, 0.466667)
+position = Vector2(185, 2546)
+scale = Vector2(350, 350)
+mesh = SubResource("QuadMesh_0tepu")

@@ -1,21 +1,62 @@
-[gd_scene load_steps=4 format=3 uid="uid://xfvrw0wy76my"]
+[gd_scene load_steps=5 format=3 uid="uid://xfvrw0wy76my"]
 
 [ext_resource type="Script" uid="uid://bgolm7mofhhpw" path="res://your_number.gd" id="1_jnqfw"]
 [ext_resource type="PackedScene" uid="uid://bj0srunvignap" path="res://keyboard.tscn" id="2_4l1mo"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_4l1mo"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_jnqfw"]
 
 [node name="YourNumber" type="Node2D"]
 script = ExtResource("1_jnqfw")
 
-[node name="textBox" type="Label" parent="."]
-offset_left = 354.0
-offset_top = 520.0
-offset_right = 1068.0
-offset_bottom = 862.0
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0.104569, 0.35919, 0.64208, 1)
+position = Vector2(444, 913)
+scale = Vector2(130.944, 215.879)
+mesh = SubResource("QuadMesh_4l1mo")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+modulate = Color(0.104569, 0.35919, 0.64208, 1)
+position = Vector2(586, 913)
+scale = Vector2(130.944, 215.879)
+mesh = SubResource("QuadMesh_4l1mo")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="."]
+modulate = Color(0.104569, 0.35919, 0.64208, 1)
+position = Vector2(728, 913)
+scale = Vector2(130.944, 215.879)
+mesh = SubResource("QuadMesh_4l1mo")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="."]
+modulate = Color(0.104569, 0.35919, 0.64208, 1)
+position = Vector2(872, 913)
+scale = Vector2(130.944, 215.879)
+mesh = SubResource("QuadMesh_4l1mo")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="."]
+modulate = Color(0.104569, 0.35919, 0.64208, 1)
+position = Vector2(1015, 913)
+scale = Vector2(130.944, 215.879)
+mesh = SubResource("QuadMesh_4l1mo")
+
+[node name="L_textBox" type="Label" parent="."]
+offset_left = 372.0
+offset_top = 737.0
+offset_right = 1086.0
+offset_bottom = 1079.0
 theme_override_font_sizes/font_size = 250
 text = "88888"
-horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="L_instruction" type="Label" parent="."]
+offset_left = 345.0
+offset_top = 522.0
+offset_right = 1092.0
+offset_bottom = 864.0
+theme_override_font_sizes/font_size = 100
+text = "Digit Your Code"
 vertical_alignment = 1
 
 [node name="Keyboard" parent="." instance=ExtResource("2_4l1mo")]
