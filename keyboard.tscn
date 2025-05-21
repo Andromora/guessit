@@ -1,0 +1,173 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj0srunvignap"]
+
+[ext_resource type="Script" uid="uid://7wuk11y7ymk0" path="res://keyboard.gd" id="1_yo7bg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gnjq6"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_yo7bg"]
+
+[node name="Keyboard" type="Area2D"]
+script = ExtResource("1_yo7bg")
+metadata/_edit_horizontal_guides_ = [2289.0]
+
+[node name="C_1" type="CollisionShape2D" parent="."]
+position = Vector2(189, 1611)
+scale = Vector2(14, 14)
+shape = SubResource("RectangleShape2D_gnjq6")
+
+[node name="C_2" type="CollisionShape2D" parent="."]
+position = Vector2(669, 1613)
+scale = Vector2(14, 14)
+shape = SubResource("RectangleShape2D_gnjq6")
+
+[node name="C_3" type="CollisionShape2D" parent="."]
+position = Vector2(1177, 1611)
+scale = Vector2(14, 14)
+shape = SubResource("RectangleShape2D_gnjq6")
+
+[node name="C_4" type="CollisionShape2D" parent="."]
+position = Vector2(196, 1924)
+scale = Vector2(14, 14)
+shape = SubResource("RectangleShape2D_gnjq6")
+
+[node name="C_5" type="CollisionShape2D" parent="."]
+position = Vector2(674, 1917)
+scale = Vector2(14, 14)
+shape = SubResource("RectangleShape2D_gnjq6")
+
+[node name="C_6" type="CollisionShape2D" parent="."]
+position = Vector2(1177, 1917)
+scale = Vector2(14, 14)
+shape = SubResource("RectangleShape2D_gnjq6")
+
+[node name="C_7" type="CollisionShape2D" parent="."]
+position = Vector2(193, 2220)
+scale = Vector2(14, 14)
+shape = SubResource("RectangleShape2D_gnjq6")
+
+[node name="C_8" type="CollisionShape2D" parent="."]
+position = Vector2(677, 2226)
+scale = Vector2(14, 14)
+shape = SubResource("RectangleShape2D_gnjq6")
+
+[node name="C_9" type="CollisionShape2D" parent="."]
+position = Vector2(1174, 2226)
+scale = Vector2(14, 14)
+shape = SubResource("RectangleShape2D_gnjq6")
+
+[node name="C_10" type="CollisionShape2D" parent="."]
+position = Vector2(682, 2535)
+scale = Vector2(14, 14)
+shape = SubResource("RectangleShape2D_gnjq6")
+
+[node name="C_Ready" type="CollisionShape2D" parent="."]
+position = Vector2(191, 2531)
+scale = Vector2(14, 14)
+shape = SubResource("RectangleShape2D_gnjq6")
+
+[node name="C_Delete" type="CollisionShape2D" parent="."]
+position = Vector2(1179, 2530)
+scale = Vector2(14, 14)
+shape = SubResource("RectangleShape2D_gnjq6")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0, 0.426474, 0.427706, 1)
+position = Vector2(691, 2061)
+scale = Vector2(1370.97, 1257.68)
+mesh = SubResource("QuadMesh_yo7bg")
+
+[node name="L_Ready" type="Label" parent="."]
+offset_left = 126.0
+offset_top = 2400.0
+offset_right = 266.0
+offset_bottom = 2673.0
+theme_override_font_sizes/font_size = 180
+text = "✓"
+
+[node name="L_Delete" type="Label" parent="."]
+offset_left = 1075.0
+offset_top = 2395.0
+offset_right = 1281.0
+offset_bottom = 2668.0
+theme_override_font_sizes/font_size = 180
+text = "<<"
+
+[node name="L_1" type="Label" parent="."]
+offset_left = 138.0
+offset_top = 1482.0
+offset_right = 252.0
+offset_bottom = 1755.0
+theme_override_font_sizes/font_size = 180
+text = "1"
+
+[node name="L_2" type="Label" parent="."]
+offset_left = 620.0
+offset_top = 1483.0
+offset_right = 734.0
+offset_bottom = 1756.0
+theme_override_font_sizes/font_size = 180
+text = "2"
+
+[node name="L_3" type="Label" parent="."]
+offset_left = 1120.0
+offset_top = 1483.0
+offset_right = 1234.0
+offset_bottom = 1756.0
+theme_override_font_sizes/font_size = 180
+text = "3"
+
+[node name="L_4" type="Label" parent="."]
+offset_left = 138.0
+offset_top = 1796.0
+offset_right = 252.0
+offset_bottom = 2069.0
+theme_override_font_sizes/font_size = 180
+text = "4"
+
+[node name="L_5" type="Label" parent="."]
+offset_left = 620.0
+offset_top = 1796.0
+offset_right = 734.0
+offset_bottom = 2069.0
+theme_override_font_sizes/font_size = 180
+text = "5"
+
+[node name="L_6" type="Label" parent="."]
+offset_left = 1120.0
+offset_top = 1796.0
+offset_right = 1234.0
+offset_bottom = 2069.0
+theme_override_font_sizes/font_size = 180
+text = "6"
+
+[node name="L_7" type="Label" parent="."]
+offset_left = 138.0
+offset_top = 2109.0
+offset_right = 252.0
+offset_bottom = 2382.0
+theme_override_font_sizes/font_size = 180
+text = "7"
+
+[node name="L_8" type="Label" parent="."]
+offset_left = 620.0
+offset_top = 2109.0
+offset_right = 734.0
+offset_bottom = 2382.0
+theme_override_font_sizes/font_size = 180
+text = "8"
+
+[node name="L_9" type="Label" parent="."]
+offset_left = 1120.0
+offset_top = 2109.0
+offset_right = 1234.0
+offset_bottom = 2382.0
+theme_override_font_sizes/font_size = 180
+text = "9"
+
+[node name="L_10" type="Label" parent="."]
+offset_left = 620.0
+offset_top = 2422.0
+offset_right = 734.0
+offset_bottom = 2695.0
+theme_override_font_sizes/font_size = 180
+text = "0"
