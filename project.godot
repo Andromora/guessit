@@ -11,14 +11,24 @@ config_version=5
 [application]
 
 config/name="GuessIt"
-run/main_scene="uid://cd0okkx2e70wf"
+run/main_scene="uid://og7u4743rwi1"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*res://game_manager.gd"
+SceneManager="*res://scene_manager.gd"
+Supabase="*res://addons/supabase/Supabase/supabase.gd"
 
 [display]
 
 window/size/viewport_width=720
 window/size/viewport_height=1280
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/supabase/plugin.cfg")
 
 [rendering]
 

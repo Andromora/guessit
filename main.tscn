@@ -1,17 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://cd0okkx2e70wf"]
+[gd_scene load_steps=2 format=3 uid="uid://og7u4743rwi1"]
 
-[ext_resource type="Script" uid="uid://dweh0pixd3rfc" path="res://main.gd" id="1_h2yge"]
-[ext_resource type="PackedScene" uid="uid://xfvrw0wy76my" path="res://your_number.tscn" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://c5x1n4hu5cwdt" path="res://guess_it.tscn" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://c8qyc7ms28fbo" path="res://main.gd" id="1_h2yge"]
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node"]
 script = ExtResource("1_h2yge")
-
-[node name="YourNumber" parent="." instance=ExtResource("1_ig7tw")]
-visible = false
-
-[node name="Guess_it" parent="." instance=ExtResource("2_0xm2m")]
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(688, 1468)
-zoom = Vector2(0.53, 0.53)
