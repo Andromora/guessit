@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GuessIt"
-run/main_scene="uid://og7u4743rwi1"
+run/main_scene="uid://cd0okkx2e70wf"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 

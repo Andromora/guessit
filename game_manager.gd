@@ -2,6 +2,7 @@ extends Node
 
 signal login_failed(error: String)
 signal login_succeed
+signal typed_number(digit)
 
 var number_to_guess: int
 var number_entered: int
@@ -18,3 +19,6 @@ func loginUser(username: String):
 	else:
 		login_succeed.emit()
 	
+func _set_the_number(digit: int):
+	number_entered = digit
+	emit_signal("typed_number",digit)
